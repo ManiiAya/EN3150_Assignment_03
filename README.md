@@ -3,7 +3,7 @@
 
 ---
 
-## 1. Create the Repository
+## 1. Repository
 
 1. Enable **branch protection** on `main`:
    - Settings → Branches → Add rule for `main`
