@@ -19,7 +19,6 @@ cd en3150-a03-cnn-edge-classification
 
 ## 2. Recommended Folder Structure
 
-Structure it like a small ML project, not a pile of notebooks:
 
 ```
 en3150-a03-cnn-edge-classification/
