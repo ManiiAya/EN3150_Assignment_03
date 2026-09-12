@@ -1,8 +1,26 @@
-data/ 
-weights/ 
-venv/ 
-*.pt 
-*.h5 
-*.pth 
-__pycache__/ 
-.ipynb_checkpoints/ 
+# Environments
+venv/
+env/
+.env
+
+# Data and Model Weights (CRITICAL to ignore)
+data/
+weights/
+*.pt
+*.pth
+*.h5
+*.keras
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# IDE and Editor Folders (Prevents overwriting group members' settings)
+.vscode/
+.idea/
+
+# OS Specific files (In case a teammate uses a Mac)
+.DS_Store
