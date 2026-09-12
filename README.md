@@ -1,6 +1,5 @@
 ## EN3150 Assignment 03 — Resource-Constrained CNN
 
-This guide walks you through setting up the repo, folder structure, and workflow so your commit history clearly shows steady work over time (the assignment explicitly says the instructor will check commit history for this, even though only the PDF is graded).
 
 ---
 
