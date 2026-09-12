@@ -5,12 +5,7 @@
 
 ## 1. Create the Repository
 
-1. One team member creates a **new GitHub repo** (don't fork from a template with unrelated history).
-   - Name: something like `en3150-a03-cnn-edge-classification`
-   - Visibility: **Private** is safer for coursework (avoid plagiarism flags), then add teammates + optionally the instructor as collaborators.
-   - Initialize with a `README.md`, `.gitignore` (Python template), and a `LICENSE` (optional, MIT is fine for coursework).
-2. Add all group members as **collaborators**: Settings → Collaborators → add by GitHub username or email.
-3. Enable **branch protection** on `main`:
+1. Enable **branch protection** on `main`:
    - Settings → Branches → Add rule for `main`
    - Require pull request before merging, require at least 1 approval.
    - This forces everyone to work on branches and merge via PRs, which naturally creates a clean, reviewable history.
