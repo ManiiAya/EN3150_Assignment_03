@@ -1,10 +1,10 @@
 # EN3150 Assignment 03: Resource-Constrained CNN for Edge Image Classification
 
 ## Group Members
-*   **Manitha Ayanaja** - [Insert Index Number] - University of Moratuwa
-*   **[Team Member 2 Name]** - [Insert Index Number] - [University/Institution]
-*   **[Team Member 3 Name]** - [Insert Index Number] - [University/Institution]
-*   **[Team Member 4 Name]** - [Insert Index Number] - [University/Institution]
+*   **Manitha Ayanaja** - [Insert Index Number] 
+*   **[Team Member 2 Name]** - [Insert Index Number]
+*   **[Team Member 3 Name]** - [Insert Index Number] 
+*   **[Team Member 4 Name]** - [Insert Index Number] 
 
 ## Project Overview
 This repository contains the implementation of a lightweight image classifier designed for resource-constrained edge devices (e.g., microcontrollers, Raspberry Pi). The project explores the trade-offs between accuracy, memory footprint, and computational cost by comparing custom CNN architectures against State-of-the-Art (SOTA) lightweight networks.
