@@ -201,7 +201,7 @@ Summary table — see report/ for full details.
 
 ## 7. Quick start checklist
 
-1. [ ] Create private repo, add collaborators, enable branch protection
+1. [ ] Enable branch protection
 2. [ ] Set up folder structure + `.gitignore` + `requirements.txt`
 3. [ ] Register dataset choice in the shared sheet
 4. [ ] Create GitHub Issues for each of the 6 numbered tasks in the assignment
