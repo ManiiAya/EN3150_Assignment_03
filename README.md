@@ -1,7 +1,6 @@
 \# EN3150 Assignment 03: Resource-Constrained CNN for Edge Image Classification
 
 
-
 \## Group Members
 
 \*   \*\*Manitha Ayanaja\*\* - \[Insert Index Number] - University of Moratuwa
