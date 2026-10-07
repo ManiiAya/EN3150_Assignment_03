@@ -24,3 +24,5 @@ __pycache__/
 
 # OS Specific files (In case a teammate uses a Mac)
 .DS_Store
+
+notebook.ipynb
