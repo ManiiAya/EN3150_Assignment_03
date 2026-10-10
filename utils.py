@@ -181,8 +181,9 @@ def plot_training_history(history, model_name="Model"):
 
 def plot_confusion_matrix(cm, class_names, model_name="Model"):
     """Plot a row-normalized confusion matrix."""
+    cm_normalized = cm.astype(float) / cm.sum(axis=1, keepdims=True)
     display = ConfusionMatrixDisplay(
-        confusion_matrix=cm,
+        confusion_matrix=cm_normalized,
         display_labels=class_names,
     )
     fig, ax = plt.subplots(figsize=(9, 9))
@@ -191,7 +192,6 @@ def plot_confusion_matrix(cm, class_names, model_name="Model"):
         xticks_rotation=45,
         values_format=".2f",
         cmap="Blues",
-        normalize="true",
     )
     ax.set_title(f"{model_name} - Normalized Confusion Matrix")
     plt.tight_layout()
