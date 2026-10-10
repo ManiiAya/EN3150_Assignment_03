@@ -17,6 +17,14 @@ def count_parameters(model):
     )
 
 
+def model_size_kb(model):
+    """Return the size of the model in kilobytes."""
+    total_params = sum(
+        p.numel() for p in model.parameters() if p.requires_grad
+    )
+    return total_params * 4 / 1024
+
+
 def train_one_epoch(model, loader, criterion, optimizer, device):
     """Train a model for one epoch."""
     model.train()
@@ -169,7 +177,7 @@ def plot_training_history(history, model_name="Model"):
 
 
 def plot_confusion_matrix(cm, class_names, model_name="Model"):
-    """Plot a confusion matrix."""
+    """Plot a row-normalized confusion matrix."""
     display = ConfusionMatrixDisplay(
         confusion_matrix=cm,
         display_labels=class_names,
@@ -178,8 +186,10 @@ def plot_confusion_matrix(cm, class_names, model_name="Model"):
     display.plot(
         ax=ax,
         xticks_rotation=45,
-        values_format="d",
+        values_format=".2f",
+        cmap="Blues",
+        normalize="true",
     )
-    ax.set_title(f"{model_name} - Confusion Matrix")
+    ax.set_title(f"{model_name} - Normalized Confusion Matrix")
     plt.tight_layout()
     plt.show()
