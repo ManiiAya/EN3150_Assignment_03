@@ -26,3 +26,5 @@ __pycache__/
 .DS_Store
 
 notebook.ipynb
+tmp/*
+tmp/
