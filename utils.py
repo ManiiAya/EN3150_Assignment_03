@@ -85,6 +85,7 @@ def train_model(model, train_loader, val_loader, criterion, optimizer, device, n
         "val_accuracy": [],
         "epoch_time": [],
     }
+    training_start_time = time.perf_counter()
     for epoch in range(num_epochs):
         start_time = time.perf_counter()
         train_loss, train_accuracy = train_one_epoch(
@@ -114,6 +115,8 @@ def train_model(model, train_loader, val_loader, criterion, optimizer, device, n
             f"Val Acc: {val_accuracy:.4f} | "
             f"Time: {epoch_time:.2f}s"
         )
+    total_training_time = time.perf_counter() - training_start_time
+    print(f"Total training time: {total_training_time:.2f}s")
     return history
 
 
