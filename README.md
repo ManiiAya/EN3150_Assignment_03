@@ -179,11 +179,5 @@ results/section02/
 
 The notebook also displays training/validation plots and row-normalized confusion matrices. The **complete analysis, figures, and trade-off discussion** are provided in the separately submitted assignment report.
 
-## Submission and Notes
-
-- Submit the **PDF report and code separately** as required by the assignment, using the specified group-number filename format.
-- The notebooks rely on `data_prep.py`, `utils.py`, and the relevant `models/` modules; keep those files with the submission.
-- Keep EuroSAT images and saved checkpoints out of version control due to size (verify that `.gitignore` includes `data/EuroSAT_RGB/` and `checkpoints/`). Do **not** commit GitHub tokens, passwords, or other credentials.
-- The Git history records the team's implementation work. If the repository remains private, the course staff will need appropriate GitHub access to inspect it.
 
 For the course requirements and detailed experimental conclusions, refer to the final **EN3150 Assignment 03 report**.
